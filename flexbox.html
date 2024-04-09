@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore FlexBox</title>
+    <style>
+        .container{
+            display: flex;/*div থাকে নিচে নিচে। flex থাকে পাশাপাশি */
+            justify-content: center;/*justify-content: বামে-ডানে or horijental সরানোর জন্য ব্যবহার করা হয়। */
+            border: 3px dotted purple;/*Layout = সাজানো, গুসানো, বিন্যাস ,layout এর বিষয় গুলো হলো flex,grid,Ctrl+shift+N দিলে নতুন folder create হবে।Flexbox হলো অনেকগুলো জিনিসকে সাজানো একটা বাক্সের মধ্যে বা container এর মধ্যে। Parent হিসাবে container div থাকবে*/
+            align-items: center; /* vertical or উপরে-নিচে 
+            */
+            align-items: stretch;/*যতটুকু জায়গা আছে সবটুকু দখল করে নিবে। */
+            flex-wrap: wrap;/*রেপ হলো ভেঙে্গ ফেলা */
+            flex-direction: column-reverse;/*Row হলো বামে-ডানে,,column হলো ওপরে-নিচে। */
+            height: 300px;
+        }
+        .box{
+            font-size: 3em;
+            font-weight: 700;
+            border: 3px dashed peru;
+            width: 100pox;
+            height: 100px;
+        }
+        #box-2{
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <!--.container>.box{Box-$}*3-->
+    <div class="container">
+        <div class="box">Box-1</div>
+        <div id="box-2">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box">Box-4</div><!--Alt+shift+down arrow দিয়ে সম্প্রন্নটা একসাথে নেওয়া যায়।  flexbox হলো একটা flexible way তে row বা column এ items গুলো বসানো কে flexbox বলে। display : flex দিয়ে  items  গুলো পাশাপাশি রাখা যাই। -->
+    </div>
+    
+</body>
+</html>

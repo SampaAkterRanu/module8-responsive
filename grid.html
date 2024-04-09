@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 200px 200px 200px ;/*৪ টা coloum*/
+           /* grid-template-columns: repeat(4,200px); repeat এর ১ম মান হলো coloum সংখ্যা এবং ২য় মান হলো size.*/
+          /* grid-template-columns: repeat(3, 1fr) 2fr; fr হলো facsion, যতভাগ হবে তার এক ভাগ নিবা। */
+          justify-content: center;
+        }
+        .item{
+            border: 1px solid indianred;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <h2>Explore Grid Layout</h2>
+    <div class="container">
+        <!--.item{Item-$}*20-->
+        <div class="item">Item-1</div>
+        <div class="item">Item-2</div>
+        <div class="item">Item-3</div>
+        <div class="item">Item-4</div>
+        <div class="item">Item-5</div>
+        <div class="item">Item-6</div>
+        <div class="item">Item-7</div>
+        <div class="item">Item-8</div>
+        <div class="item">Item-9</div>
+        <div class="item">Item-10</div>
+        <div class="item">Item-11</div>
+        <div class="item">Item-12</div>
+        <div class="item">Item-13</div>
+        <div class="item">Item-14</div>
+        <div class="item">Item-15</div>
+        <div class="item">Item-16</div>
+        <div class="item">Item-17</div>
+        <div class="item">Item-18</div>
+        <div class="item">Item-19</div>
+        <div class="item">Item-20</div>
+    </div>
+    
+</body>
+</html>

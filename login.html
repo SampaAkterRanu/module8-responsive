@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://kit.fontawesome.com/c77a1cae19.js" crossorigin="anonymous"></script>
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        nav a{
+            text-decoration: none;
+            color: black;
+            margin-right: 10px;/*fontawesome.com in google*/
+        }
+        .login-container{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .login-form{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+        .login-form input{/*Login-form এর ভিতরে সকল ইনপুট */
+            margin-top: 1em;
+            font-size: 1.5em;
+            padding: 5px 10px;/*ওপর-নিচে, বামে-ডানে */
+
+        }
+        .login-form input[type="submit"]{/*submit ke style korar jonno*/
+            background-color: goldenrod;
+            border: 0;
+            border-radius: 5px;
+            color: whitesmoke;
+            font-weight: 700;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <span>
+                <a href="">Home</a>
+            <a href="">Dashbroad</a>
+            <a href="">Inventory</a>
+            </span>
+            
+            <span>
+                <a href=""><i class="fa-solid fa-right-from-bracket"></i></a>
+            <a href=""><i class="fa-solid fa-user"></i></a>
+            </span>
+        </nav>
+    </header>
+    <!--form.login-form-->
+    <section class="login-container">
+        <form class="login-form">
+            <h3>Please Login</h3>
+            <input type="email" name="" id="" placeholder="Your Email" required>
+            <input type="password" name="" id="" placeholder="password"><!--input tag হলো inline block tag..তাই একটার পাশাপাশি আরেকটা আসে। -->
+            <input type="submit" value="login">
+    
+        </form>
+    </section>
+    
+</body>
+</html>
